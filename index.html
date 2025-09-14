@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,56 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeConductEr.com</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background-color: #111; /* dark background around image */
+      background-color: #111; /* optional dark background around image */
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
+      height: 100%;
       position: relative;
     }
 
     .image-container {
       position: relative;
-      display: inline-block; /* container shrinks to image size */
+      display: inline-block; /* shrink to image size */
     }
 
     .image-container img {
+      width: auto;       /* display at original width */
+      height: auto;      /* display at original height */
       display: block;
-      width: auto;    /* exact original width */
-      height: auto;   /* exact original height */
     }
 
     .cta-button {
       position: absolute;
-      bottom: 20px;   /* adjust to overlay your Canva button */
-      left: 50%;
+      bottom: 20px;         /* adjust to place over the button in image */
+      left: 50%;            /* center horizontally */
       transform: translateX(-50%);
       padding: 12px 25px;
       background-color: #007acc;
       color: white;
       text-decoration: none;
-      font-size: 16px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 10;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #005fa3;
-    }
-  </style>
-</head>
-<body>
-  <div class="image-container">
-    <!-- Use relative path to ensure it always loads -->
-    <img src="background.png" alt="CodeConductEr.com">
-    <!-- Clickable button overlay -->
-    <a href="mailto:youremail@example.com" class="cta-button">Make an Offer</a>
-  </div>
-</body>
-</html>
+      font-size
