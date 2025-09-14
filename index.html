@@ -5,41 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeConductEr.com</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      background-color: #111;
-      font-family: Arial, sans-serif;
+      background-color: #111; /* dark background around image */
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
       position: relative;
     }
 
     .image-container {
       position: relative;
-      display: inline-block;
+      display: inline-block; /* container shrinks to image size */
     }
 
     .image-container img {
-      width: auto;   /* natural width */
-      height: auto;  /* natural height */
       display: block;
+      width: auto;    /* exact original width */
+      height: auto;   /* exact original height */
     }
 
     .cta-button {
       position: absolute;
-      bottom: 50px;       /* adjust to sit over button in image */
+      bottom: 20px;   /* adjust to overlay your Canva button */
       left: 50%;
       transform: translateX(-50%);
-      padding: 15px 30px;
+      padding: 12px 25px;
       background-color: #007acc;
       color: white;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 16px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       z-index: 10;
       transition: background-color 0.3s ease;
     }
@@ -50,3 +50,11 @@
   </style>
 </head>
 <body>
+  <div class="image-container">
+    <!-- Use relative path to ensure it always loads -->
+    <img src="background.png" alt="CodeConductEr.com">
+    <!-- Clickable button overlay -->
+    <a href="mailto:youremail@example.com" class="cta-button">Make an Offer</a>
+  </div>
+</body>
+</html>
