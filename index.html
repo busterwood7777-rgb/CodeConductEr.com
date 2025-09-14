@@ -8,29 +8,34 @@
     html, body {
       margin: 0;
       height: 100%;
-    }
-    body {
-      /* Full-screen background using your uploaded image */
-      background: url('https://github.com/busterwood7777-rgb/CodeConductEr.com/raw/main/background.png') no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000; /* optional background */
       position: relative;
+      font-family: Arial, sans-serif;
     }
-    /* Clickable button */
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* keeps aspect ratio */
+      display: block;
+    }
+    /* Clickable button on top */
     .cta-button {
-      position: absolute;       /* absolute ensures it’s visible over background */
-      bottom: 50px;             /* distance from bottom */
-      left: 50%;                /* center horizontally */
+      position: absolute;
+      bottom: 50px;        /* adjust vertical position */
+      left: 50%;           /* center horizontally */
       transform: translateX(-50%);
       padding: 15px 30px;
       background-color: #007acc;
-      color: white;
+      color: #fff;
       text-decoration: none;
       font-size: 18px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 10;         /* make sure it's on top */
       transition: background-color 0.3s ease;
-      z-index: 10;              /* makes sure it’s on top */
     }
     .cta-button:hover {
       background-color: #005fa3;
@@ -38,7 +43,8 @@
   </style>
 </head>
 <body>
-  <!-- Replace youremail@example.com with your actual email -->
+  <img src="https://raw.githubusercontent.com/busterwood7777-rgb/CodeConductEr.com/main/background.png" alt="CodeConductEr.com">
+  <!-- Replace with your email -->
   <a href="mailto:youremail@example.com" class="cta-button">Make an Offer</a>
 </body>
 </html>
