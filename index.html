@@ -11,23 +11,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #111; /* dark background */
+      background-color: #111;
       font-family: Arial, sans-serif;
       position: relative;
     }
     img {
-      max-width: 90%;
-      max-height: 80vh;
-      border-radius: 12px; /* rounded corners */
-      box-shadow: 0 4px 15px rgba(0,0,0,0.6); /* subtle shadow */
+      max-width: 70%;
+      max-height: 70vh;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
       object-fit: contain;
       display: block;
     }
-    /* Clickable button on top of image */
     .cta-button {
       position: absolute;
-      bottom: 50px;           /* distance from bottom */
-      left: 50%;              /* center horizontally */
+      bottom: 50px;
+      left: 50%;
       transform: translateX(-50%);
       padding: 15px 30px;
       background-color: #007acc;
@@ -36,7 +35,7 @@
       font-size: 18px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 10;            /* ensure it's on top */
+      z-index: 10;
       transition: background-color 0.3s ease;
     }
     .cta-button:hover {
@@ -46,7 +45,6 @@
 </head>
 <body>
   <img src="https://raw.githubusercontent.com/busterwood7777-rgb/CodeConductEr.com/main/background.png" alt="CodeConductEr.com">
-  <!-- Replace with your email -->
   <a href="mailto:youremail@example.com" class="cta-button">Make an Offer</a>
 </body>
 </html>
