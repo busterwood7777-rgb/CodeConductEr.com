@@ -8,46 +8,21 @@
     body {
       margin: 0;
       height: 100vh;
-      background: url('background.jpg') no-repeat center center/cover;
       display: flex;
-      align-items: center;
       justify-content: center;
-      color: white;
-      text-align: center;
+      align-items: center;
+      background-color: #111; /* dark background */
       font-family: Arial, sans-serif;
     }
-    .overlay {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 12px;
-    }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    h1 span {
-      color: #ff3d00; /* highlight the E */
-    }
-    a.cta {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #007acc;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    a.cta:hover {
-      background: #005fa3;
+    img {
+      max-width: 90%;   /* fits within the screen */
+      max-height: 80vh; /* keeps height reasonable */
+      border-radius: 12px; /* optional rounded corners */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6); /* subtle shadow */
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>CodeConduct<span>E</span>r.com</h1>
-    <p>Premium domain for sale. Memorable. Brandable. Perfect for developers or software platforms.</p>
-    <a class="cta" href="mailto:buster.wood.7777@gmail.com">Make an Offer</a>
-  </div>
+  <img src="background.png" alt="CodeConductEr.com">
 </body>
 </html>
