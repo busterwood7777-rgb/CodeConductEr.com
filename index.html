@@ -7,44 +7,30 @@
   <style>
     html, body {
       margin: 0;
-      height: 100vh;
+      padding: 0;
+      height: 100%;
+      background-color: #111;
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #111;
-      font-family: Arial, sans-serif;
       position: relative;
     }
-    img {
-      max-width: 70%;
-      max-height: 70vh;
+
+    .image-container {
+      position: relative;
+      display: inline-block; /* shrink to image size */
+    }
+
+    .image-container img {
+      width: auto;           /* preserve original width */
+      height: auto;          /* preserve original height */
+      max-width: 800px;      /* adjust max width */
+      max-height: 600px;     /* adjust max height */
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-      object-fit: contain;
       display: block;
     }
+
     .cta-button {
-      position: absolute;
-      bottom: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 15px 30px;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 10;
-      transition: background-color 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #005fa3;
-    }
-  </style>
-</head>
-<body>
-  <img src="https://raw.githubusercontent.com/busterwood7777-rgb/CodeConductEr.com/main/background.png" alt="CodeConductEr.com">
-  <a href="mailto:youremail@example.com" class="cta-button">Make an Offer</a>
-</body>
-</html>
+      position: a
