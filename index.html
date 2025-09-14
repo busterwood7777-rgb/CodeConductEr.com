@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,36 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeConductEr.com</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      background-color: #111; /* optional dark background around image */
-      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
-      position: relative;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: Arial, sans-serif;
     }
 
-    .image-container {
+    .container {
       position: relative;
-      display: inline-block; /* shrink to image size */
+      text-align: center;
     }
 
-    .image-container img {
-      width: auto;       /* display at original width */
-      height: auto;      /* display at original height */
+    .container img {
       display: block;
+      width: auto;  /* keeps original image size */
+      height: auto;
     }
 
-    .cta-button {
+    .email {
       position: absolute;
-      bottom: 20px;         /* adjust to place over the button in image */
-      left: 50%;            /* center horizontally */
+      bottom: 20px;
+      left: 50%;
       transform: translateX(-50%);
-      padding: 12px 25px;
-      background-color: #007acc;
       color: white;
-      text-decoration: none;
-      font-size
+      font-size: 18px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="background.png" alt="CodeConductEr.com">
+    <div class="email">Buster.Wood.7777@Gmaill.com</div>
+  </div>
+</body>
+</html>
