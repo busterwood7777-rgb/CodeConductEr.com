@@ -12,9 +12,31 @@
     body {
       background: url('background.png') no-repeat center center fixed;
       background-size: cover;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+    /* Clickable button on top of the image */
+    .cta-button {
+      position: fixed;
+      bottom: 50px;             /* distance from bottom */
+      left: 50%;                /* center horizontally */
+      transform: translateX(-50%);
+      padding: 15px 30px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
+  <!-- Replace youremail@example.com with your real email -->
+  <a href="mailto:youremail@example.com" class="cta-button">Make an Offer</a>
 </body>
 </html>
